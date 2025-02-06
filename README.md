@@ -33,16 +33,19 @@ Run nix develop while inside the dir with the flake
 
 ## Usage
 
+To get the UDID , run this command ```idevice_id -l``` provided by libimobiledevice
+
 ```
-./rvi_capture.py [--format {pcap,pcapng}] [--udid UDID] outfile
-
-to get the UDID , run this command idevice_id -l provided by libimobiledevice
-
+  ./rvi_capture.py [--format {pcap,pcapng}] [--udid UDID] outfile
+```
 eg:
-    ./rvi_capture.py --format pcapng --udid a0993c62ead0d9745b1f6ca37626fa72cc48d9a0 iphone-capture
-
-    you can the use wireshark to open the capture later with wireshark iphone-capture
-
+```
+  ./rvi_capture.py --format pcapng --udid a0993c62ead0d9745b1f6ca37626fa72cc48d9a0 iphone-capture
+```
+you can the use wireshark to open the capture later with 
+```
+  wireshark iphone-capture
+```
 ```
 
 - `--format`: capture format
@@ -52,11 +55,12 @@ eg:
 - `--udid`: device UDID  
   The specific device to target. If omitted, the first device found will be used.
 - `outfile`: output file or FIFO, or `-` for standard output.
+```
 
 ## Using with Wireshark
 
 ```
-./rvi_capture.py - | wireshark -k -i -
+  ./rvi_capture.py - | wireshark -k -i -
 ```
 
 ### Tips
