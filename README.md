@@ -5,8 +5,8 @@ rvictl for Linux and Windows: capture packets sent/received by iOS devices
 A utility to create packet capture dumps from iOS devices; useful for debugging network activity via Wireshark.
 
 Tested on :
-Arch Linux with iOS 14.8.
-NixOS 24.11 with iOS 15.8.3
+  Arch Linux with iOS 14.8. <br>
+  NixOS 24.11 with iOS 15.8.3
 
 ## Prerequisites
 
